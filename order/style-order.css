@@ -1,0 +1,203 @@
+@font-face{
+  font-family: "Montserrat-Regular";
+  src: url("../fonts/Montserrat-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+html {
+  height: 100%;
+  max-width: 100vw;
+}
+body {
+  min-height: 100%;
+  max-width: 100vw;
+  background-image: url(../imag/fon.jpg);
+  margin: 0;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  font-family: "Montserrat-Regular";
+  color: #333333;
+}
+#pystota{
+  width: 100%;
+  height: 2vh;
+  background-color: rgba(360, 360, 360, 0);
+}
+.blok{
+  width: 94%;
+  margin: 3%;
+}
+.p-top{
+  position: fixed;
+  top: 0px;
+  margin:auto;
+  left:5vw;
+  background: rgba(360, 360, 360, 0.95);
+  width: 90vw;
+  box-shadow: 0 14px 28px rgba(51,51,51,0.25), 0 10px 10px rgba(51,51,51,0.22);
+}
+.blok-new{
+  background: rgba(360, 360, 360, 0.95);
+  display: inline-block;
+  width: 94%;
+  margin: 3%;
+  box-shadow: 0 14px 28px rgba(51,51,51,0.25), 0 10px 10px rgba(51,51,51,0.22);
+}
+.order-div1{
+  background: rgba(360, 360, 360, 0.95);
+  box-shadow: 0 14px 28px rgba(51,51,51,0.25), 0 10px 10px rgba(51,51,51,0.22);
+  display: inline-block;
+  margin: 2%;
+  border: 1px solid #333333;
+  width: 330px;
+  min-width: 25vw;
+  max-width: 88vw;
+}
+.order-div1 table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.order-div1 table td {
+  max-width: 100%;
+  border: 3px solid #333333;
+}
+.collor_td2{
+  background: rgba(153, 204, 51, 0.95);
+}
+.order-div2{
+  background: rgba(153, 204, 51, 0.95);
+  box-shadow: 0 14px 28px rgba(51,51,51,0.25), 0 10px 10px rgba(51,51,51,0.22);
+  display: inline-block;
+  margin: 2%;
+  border: 1px solid #333333;
+  width: 330px;
+  min-width: 25vw;
+  max-width: 88vw;
+}
+.order-div2 table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.order-div2 table td {
+  max-width: 100%;
+  border: 3px solid #333333;
+}
+.order-div3{
+  background: rgba(32, 178, 170, 0.95);
+  box-shadow: 0 14px 28px rgba(51,51,51,0.25), 0 10px 10px rgba(51,51,51,0.22);
+  display: inline-block;
+  margin: 2%;
+  border: 1px solid #333333;
+  width: 330px;
+  min-width: 25vw;
+  max-width: 88vw;
+}
+.order-div3 table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.order-div3 table td {
+  max-width: 100%;
+  border: 3px solid #333333;
+}
+#plas{
+  height: 60px;
+  -webkit-filter: drop-shadow(0 10px 10px rgba(51,51,51,0.4));
+  filter: drop-shadow(0 10px 10px rgba(51,51,51,0.4));
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+}
+#exit{
+  height: 60px;
+  -webkit-filter: drop-shadow(0 10px 10px rgba(51,51,51,0.4));
+  filter: drop-shadow(0 10px 10px rgba(51,51,51,0.4));
+  position: fixed;
+  top: 25px;
+  right: 25px;
+}
+.form1{
+  margin:0 auto;
+  box-sizing:border-box;
+  padding:40px;
+  width: 600px;
+  min-width: 40vw;
+  max-width: 90vw;
+}
+.form-log{
+  margin:0 auto;
+  box-sizing:border-box;
+  padding:40px;
+  width: 600px;
+  min-width: 40vw;
+  max-width: 90vw;
+}
+/* Стили полей ввода */
+.textbox{
+  height:60px;
+  width:100%;
+  background-color: #eeeeee;
+  border-radius:3px;
+  border:rgba(0,0,0,.3) 2px solid;
+  box-sizing:border-box;
+  font-family: 'Open Sans', sans-serif;
+  padding:10px;
+  margin-bottom:30px;
+}
+.message:focus,
+.textbox:focus{
+  outline:none;
+   border:rgba(24,149,215,1) 2px solid;
+   color:rgba(24,149,215,1);
+   background-color: #dddddd;
+}
+/* Стили текстового поля */
+.message{
+    background: rgba(255, 255, 255, 0.4);
+    background-color: #eeeeee;
+    width:100%;
+    height: 200px;
+    border:rgba(0,0,0,.3) 2px solid;
+    box-sizing:border-box;
+    -moz-border-radius: 3px;
+    font-family: 'Open Sans', sans-serif;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    display:block;
+    padding:10px;
+    margin-bottom:30px;
+    overflow:hidden;
+}
+/* Базовые стили кнопки */
+.button{
+  height:50px;
+  width:100%;
+  border-radius:3px;
+  border:rgba(0,0,0,.3) 0px solid;
+  box-sizing:border-box;
+  padding:10px;
+  background:#90c843;
+  color:#FFF;
+  font-family: 'Open Sans', sans-serif;
+  transition:background .4s;
+  cursor:pointer;
+}
+/* Изменение фона кнопки при наведении */
+.button:hover{
+  background:#80b438;
+}
+.but_izm{
+  background-color: #eeeeee;
+  border: 1px solid #333333;
+  padding: 5px;
+  text-decoration: none;
+  transition-duration: 0.5s;
+}
+.but_izm{
+  text-decoration: none;
+  color: #333333;
+}
+.but_izm:hover{
+  color: #333333;
+  background-color: rgba(300, 300, 300, 0);
+}

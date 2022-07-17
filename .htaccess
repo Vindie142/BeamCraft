@@ -1,0 +1,5 @@
+ErrorDocument 404 /err404.php
+RewriteEngine On
+RewriteRule ^thanks\.php$ / [R=301,L]
+RewriteRule ^index\.php$ / [R=301,L]
+RewriteRule ^(.*)/index\.php$ /$1/ [R=301,L]
